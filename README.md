@@ -39,12 +39,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.basic-fit.com/nl-nl/prijs 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/Frame 2.png" width="375px" alt="omschrijving van de pagina">
+  Prijzen
+  <img src="readme-images/Frame 2.png" width="375px" alt="pagina over prijzen">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Groepslessen 
+  <img src="readme-images/Frame 1 (1).svg" width="375px" alt="pagina over groepslessen">
  
 </details>
 
@@ -57,6 +57,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  -Mijn website bevat veel errors.
+  -Het bevat veel divs.
+  -Het heeft geen/geen goede alt texten.
+  -Tijdens de screenreader kan ik niet goed navigeren binnen de website want er komt geen border om dat deeltje die geselecteerd is.
+  -Geen goede website voor mensen die screen reader gebruiken.
 
 </details>
 
@@ -68,7 +73,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/Frame 1 (1).svg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
