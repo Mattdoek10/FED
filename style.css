@@ -1,0 +1,76 @@
+:root {
+    --general-color:red;
+    --general-background:#fff;
+    --background-color:white ;
+    
+    --header-gradient:linear-gradient(#f8a, #fbd);
+    
+    --menu-gradient:linear-gradient(#8af, #bdf);
+    --menu-border:#46f;
+    
+    --button-color:#fff;
+    --button-background:#f46;
+    --font-nav-color: white;
+
+    --nav-bg: #2d2d2d;
+    
+  }
+
+  @font-face {
+    font-family: navFont;
+    src: url(Font/HeadingProTreble-ExtraBold.woff2);
+  }  
+  
+
+
+header {
+background-color:var(--general-color) ;
+display: flex;
+
+    padding:0 1em;
+    background-image:var(--general-color);
+    line-height:1;
+    
+    /* JOUW CODE HIER - stap 3 */  
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    /* JOUW CODE HIER - stap 3 */
+    position:sticky;
+    top:0;
+}
+
+nav a img{
+    width: 5.56em;
+    height: 2.5em;
+    padding: 0.5em;
+}
+
+nav ul {
+    list-style: none;
+    border-color: green;
+    font-family: navFont;
+     position: fixed;
+    inset: 0; 
+    background-color:var(--nav-bg) ;
+
+    margin: 0;
+    padding: 4em 1em 0;
+
+    line-height: 3em;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: var(--font-nav-color);
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    /* margin:0; */
+    background-color:var(--background-color) ;
+
+}
