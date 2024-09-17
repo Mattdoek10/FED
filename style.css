@@ -24,34 +24,40 @@
 
 
 header {
-background-color:var(--general-color) ;
-display: flex;
-
-    padding:0 1em;
-    background-image:var(--general-color);
-    line-height:1;
-    
-    /* JOUW CODE HIER - stap 3 */  
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    
-    
-    /* JOUW CODE HIER - stap 3 */
+    gap: .7em;
+
+    border-bottom:solid black;
+    padding: .9em;
     position:sticky;
     top:0;
+}
+
+img{
+    width: 100%;
+}
+
+header nav{
+    display: flex;
+    flex-grow: 1;
+}
+
+nav :first-of-type {
+    margin-right: auto;
 }
 
 nav a img{
     width: 5.56em;
     height: 2.5em;
-    padding: 0.5em;
 }
 
 nav ul {
     list-style: none;
     border-color: green;
     font-family: navFont;
-     position: fixed;
+    position: fixed;
     inset: 0; 
     background-color:var(--nav-bg) ;
 
@@ -59,18 +65,52 @@ nav ul {
     padding: 4em 1em 0;
 
     line-height: 3em;
+
+    translate:-100%;
+    transition: 1s;
+
 }
 
+header > button:nth-of-type(1){
+    height: 3em;
+    /* width: 3em; */
+    background-color: #FE7000;
+    border: none;
+    color: white;
+}
 
-nav a{
-    text-decoration: none;
-    color: var(--font-nav-color);
-    display: flex;
-    justify-content: center;
+header > button:nth-of-type(2){
+    height: 3em;
+    width: 3em;
+    background-color: transparent;
+    border: none;
+}
+
+header > button:nth-of-type(3){
+    height: 3em;
+    width: 3em;
+    background-color: transparent;
+    border: none;
 }
 
 body {
-    /* margin:0; */
+    margin:0; 
     background-color:var(--background-color) ;
 
+}
+
+main section:first-of-type{
+    position: relative;
+}
+
+main section h1{
+    position: absolute;
+    left: 1em;
+    top: 1em;
+
+}
+
+h1{
+    color: var(--button-color);
+    font-size: 2em;
 }
