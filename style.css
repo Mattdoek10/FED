@@ -1,8 +1,7 @@
 :root {
     --general-color:red;
     --general-background:#fff;
-    --background-color:white ;
-    
+    --background-color:#ece9e8;
     --header-gradient:linear-gradient(#f8a, #fbd);
     
     --menu-gradient:linear-gradient(#8af, #bdf);
@@ -20,19 +19,32 @@
     font-family: navFont;
     src: url(Font/HeadingProTreble-ExtraBold.woff2);
   }  
-  
 
+  @font-face {
+    font-family: knopFont;
+    src: url(Font/HeadingProDouble-Regular.woff2);
+  }
+
+  @font-face {
+    font-family: h1Font;
+    src: url(Font/HeadingProTreble-Heavy.woff2);
+  }
+  
+  @font-face {
+    font-family: pFont;
+    src: url(Font/heading-pro-double-light-webfont.woff2);
+  }
 
 header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: .7em;
-
-    border-bottom:solid black;
-    padding: .9em;
+    padding: .6em .8em .6em .8em;
     position:sticky;
     top:0;
+    background-color: var(--general-background);
+    z-index: 1;
 }
 
 img{
@@ -49,7 +61,7 @@ nav :first-of-type {
 }
 
 nav a img{
-    width: 5.56em;
+    width: 6.56em;
     height: 2.5em;
 }
 
@@ -72,23 +84,27 @@ nav ul {
 }
 
 header > button:nth-of-type(1){
-    height: 3em;
+    /* height: 2.5em; */
     /* width: 3em; */
     background-color: #FE7000;
     border: none;
     color: white;
+    font-family: knopFont, sans-serif;
+    text-transform: uppercase;
+    padding: 0.5em 0.93em;
+    font-size: 1em;
 }
 
 header > button:nth-of-type(2){
-    height: 3em;
-    width: 3em;
+    height: 2.8em;
+    width: 2.8em;
     background-color: transparent;
     border: none;
 }
 
 header > button:nth-of-type(3){
-    height: 3em;
-    width: 3em;
+    height: 2.5em;
+    width: 2.5em;
     background-color: transparent;
     border: none;
 }
@@ -99,7 +115,7 @@ body {
 
 }
 
-main section:first-of-type{
+/* main section:first-of-type{
     position: relative;
 }
 
@@ -108,9 +124,5 @@ main section h1{
     left: 1em;
     top: 1em;
 
-}
+} */
 
-h1{
-    color: var(--button-color);
-    font-size: 2em;
-}

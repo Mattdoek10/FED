@@ -1,0 +1,74 @@
+:root {
+    --general-color:red;
+    --general-background:#fff;
+    --background-color:#ece9e8;
+    
+    --header-gradient:linear-gradient(#f8a, #fbd);
+    
+    --menu-gradient:linear-gradient(#8af, #bdf);
+    --menu-border:#46f;
+    
+    --button-color:#fff;
+    --button-background:#f46;
+    --font-nav-color: white;
+
+    --nav-bg: #2d2d2d;
+    
+  }
+
+  @font-face {
+    font-family: navFont;
+    src: url(Font/HeadingProTreble-ExtraBold.woff2);
+  }  
+
+  @font-face {
+    font-family: knopFont;
+    src: url(Font/HeadingProDouble-Regular.woff2);
+  }
+
+  @font-face {
+    font-family: h1Font;
+    src: url(Font/HeadingProTreble-Heavy.woff2);
+  }
+
+  @font-face {
+    font-family: pFont;
+    src: url(Font/heading-pro-double-light-webfont.woff2);
+  }
+
+main > section:nth-of-type(1){
+    position: relative;
+}
+
+h1{
+    position: absolute;
+    font-size: 2em;
+    margin: 0;
+    top: 40%;
+    left: .5em;
+    font-family: h1Font, sans-serif;
+    color: transparent;
+
+    -webkit-text-stroke: 1px white;
+    text-transform: uppercase;
+}
+
+main > section:nth-of-type(2) h2{
+    padding-left: 0.5em;
+    padding-top: 1em;
+    font-family: h1Font, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    background-color: var(--background-color);
+    color: var(--nav-bg);
+    line-height: 1.2em;
+}
+
+main > section:nth-of-type(2) p{
+    padding-left: 1em;
+    color: var(--nav-bg);
+    padding-top: 7em;
+    font-family: pFont,sans-serif;
+    line-height: 1.6em;
+    margin-right: 2em;
+}
