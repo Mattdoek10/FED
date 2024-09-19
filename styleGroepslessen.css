@@ -75,13 +75,11 @@ main > section:nth-of-type(2) p{
 
 main > section:nth-of-type(3){
     position: relative;
+    padding: 1em;
 }
 
 main > section:nth-of-type(3) img{
-    width: 25em;
-    height: 25em;
-    object-fit: cover;
-    padding: 1em;
+    width: 100%;
 }
 
 main > section:nth-of-type(3) h4{
@@ -89,7 +87,8 @@ main > section:nth-of-type(3) h4{
     padding: 1em 7em 7em 1em;
     background-color: var(--general-background);
     bottom: -6em;
-    right: 0.6em;
+    right: 0.75em;
+    left: 3em;
     font-family: h1Font,sans-serif;
     color: #7adec9;
     font-size: 1.3em;
@@ -98,11 +97,13 @@ main > section:nth-of-type(3) h4{
 
 main > section:nth-of-type(3) p{
     position: absolute;
-    bottom: 0;
     font-family: knopFont,sans-serif;
     margin: 0 1em 0 6.5em ;
     font-size: 1em;
     bottom: -1em;
+    right: 1em;
+    left: 1em;
+    font-size: 1em;
 }
 
 main > section:nth-of-type(3) button{
@@ -117,6 +118,49 @@ main > section:nth-of-type(3) button{
 
 /* tweede stuk */
 
+main > section:nth-of-type(4){
+    position: relative;
+    padding: 7em 1em 7em 1em;
+}
+
+main > section:nth-of-type(4) img{
+    width: 100%;
+    
+}
+
+main > section:nth-of-type(4) h4{
+    position: absolute;
+    padding: 1em 7em 9em 1em;
+    background-color: var(--general-background);
+    bottom: -6em;
+    right: 0.75em;
+    left: 3em;
+    font-family: h1Font,sans-serif;
+    color: #7adec9;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+main > section:nth-of-type(4) p{
+    position: absolute;
+    font-family: knopFont,sans-serif;
+    margin: 0 1em 0 6.5em ;
+    font-size: 1em;
+    bottom: -1em;
+    right: 1em;
+    left: 1em;
+    font-size: 1em;
+}
+
+main > section:nth-of-type(4) button{
+    position: absolute;
+    bottom: -4.5em;
+    right: 2.5em;
+    background-color: transparent;
+    border: none;
+    font-family: knopFont,sans-serif;
+    font-size: 1em;
+}
 
 /* na tweede stuk */
 h3{
@@ -125,6 +169,10 @@ h3{
     padding-left: 0.5em;
     color: var(--nav-bg);
     font-size: 1.25em;
+}
+
+main > section:nth-of-type(5) h3{
+    padding-top: 7em;
 }
 
 main > section:nth-of-type(5) p,main > section:nth-of-type(6) p,main > section:nth-of-type(7) p,main > section:nth-of-type(8) p,main > section:nth-of-type(9) p{
