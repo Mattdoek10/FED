@@ -206,7 +206,7 @@ main > section:nth-of-type(10) p{
     margin-right: 3em;
 }
 
-footer > section:nth-of-type(1) p{
+/* footer > section:nth-of-type(1) p{
     font-family: navFont,sans-serif;
     font-size: 0.8em;
     color: var(--general-background);
@@ -246,7 +246,17 @@ footer > section:nth-of-type(2) h5,footer > section:nth-of-type(3) h5,footer > s
     text-transform: capitalize;
     margin-bottom: 1.5em;
     font-weight: bold;
-    
+    position: relative;
+}
+
+h5::after {
+    content:"";
+    background-color: #fe7000;
+    position: absolute;
+    left: 1em;
+    bottom: 0;
+    width: 1.2em;
+    height: .1em;
 }
 
 footer > section:nth-of-type(2) ul,footer > section:nth-of-type(3) ul,footer > section:nth-of-type(4) ul{
@@ -282,4 +292,4 @@ footer > section:nth-of-type(5) :nth-of-type(2){
 footer > section:nth-of-type(5) :nth-of-type(3){
     width: 1.5em;
     height: 1.5em;
-}
+} */
