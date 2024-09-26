@@ -67,7 +67,7 @@ nav a img{
     height: 2.5em;
 }
 
-nav ul {
+header nav ul {
     list-style: none;
     border-color: green;
     font-family: navFont;
@@ -168,7 +168,8 @@ footer > section:nth-of-type(2) h5,footer > section:nth-of-type(3) h5,footer > s
     position: relative;
 }
 
-h5::after {
+/* later aan zetten */
+/* h5::after {
     content:"";
     background-color: #fe7000;
     position: absolute;
@@ -176,7 +177,7 @@ h5::after {
     bottom: 0;
     width: 1.2em;
     height: .1em;
-}
+} */
 
 footer > section:nth-of-type(2) ul,footer > section:nth-of-type(3) ul,footer > section:nth-of-type(4) ul{
     column-count: 2;
