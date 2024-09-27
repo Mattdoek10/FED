@@ -46,7 +46,7 @@ header {
     position:sticky;
     top:0;
     background-color: var(--general-background);
-    z-index: 1;
+    z-index: 999999;
 }
 
 img{
