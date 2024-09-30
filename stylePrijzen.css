@@ -66,11 +66,13 @@ main > section:nth-of-type(1) h1{
     font-size: 1.5em;
     text-transform: uppercase;
     margin: 0 0 0.5em 0;
+    color: white;
 }
 main > section:nth-of-type(1) p{
     font-family: knopFont,sans-serif;
     font-size: 1em;
     margin: 0 0 1em 0;
+    color: white;
 }
 
 main > section:nth-of-type(2) ul:nth-of-type(1){
@@ -491,12 +493,6 @@ tbody tr td{
     border-top:  2px solid white;
 }
 
-/* main > section:nth-of-type(4) button{
-    display: flex;
-    align-items: center;
-    width: 100%;
-} */
-
 main > section:nth-of-type(4) div{
     display: flex;
     align-items: center;
@@ -648,4 +644,182 @@ main> section:nth-of-type(5) ul li a:nth-of-type(2){
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+main> section:nth-of-type(6){
+    /* display: flex;
+    flex-direction: column;
+     */
+    padding: 0 1em 28px 1em;
+}
+
+main > section:nth-of-type(6) div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main> section:nth-of-type(6) img{
+    max-width: 400px;
+    max-height: 496px;
+}
+
+main> section:nth-of-type(6) h3:nth-of-type(1){
+    font-family: h1Font,sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color:#fe7000 ;
+    margin-bottom: 0;
+}
+
+main> section:nth-of-type(6) h3:nth-of-type(2){
+    font-family: h1Font,sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: black;
+    margin-top: -0.3em;
+}
+
+main> section:nth-of-type(6) p{
+    font-family: knopFont,sans-serif;
+    font-size: 1em;
+    color: black;
+}
+
+main > section:nth-of-type(7){
+    padding: 28px 16px;
+    background-color: white;
+}
+
+main > section:nth-of-type(7) img{
+    width: 100%;
+    height: 196px;
+    object-fit: cover;
+}
+
+main > section:nth-of-type(7) h4{
+font-family: navFont, sans-serif;
+font-weight: 700;
+font-size: 24px;
+color: #fe7000;
+text-transform: uppercase;
+margin: 0;
+}
+
+main > section:nth-of-type(7) p{
+    font-family: knopFont,sans-serif;
+    font-size: 1em;
+}
+
+main > section:nth-of-type(7) ul{
+    list-style:none;
+    padding: 0;
+    display: grid;
+    grid-auto-columns: minmax(0, 1fr);
+    gap: 24px;
+}
+
+main> section:nth-of-type(7) ul li h5{
+    font-family: navFont, sans-serif;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    padding: 0 24px;
+    color: black;
+    margin-bottom: 0;
+}
+
+main> section:nth-of-type(7) ul li:nth-of-type(1) p{
+    font-family: knopFont,sans-serif;
+    font-size: 0.875em;
+    line-height: 1.3;
+    padding: 0 24px;
+}
+
+main> section:nth-of-type(7) ul li:nth-of-type(1){
+    padding: 0 0 4em 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .15);
+}
+
+main> section:nth-of-type(7) ul li:nth-of-type(2) p{
+    font-family: knopFont,sans-serif;
+    font-size: 0.875em;
+    line-height: 1.3;
+    padding: 0 24px;
+}
+
+main> section:nth-of-type(7) ul li:nth-of-type(2){
+    padding: 0 0 4em 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .15);
+}
+
+main> section:nth-of-type(7) a{
+    background-color: #6131ad;
+    border-style: none;
+    color: white;
+    font-family: navFont,sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0.8em 4.5em;
+    margin-top: 2em;
+    min-width: 128px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main > section:nth-of-type(8){
+    padding: 0 16px;
+    background-color: white;
+}
+
+main > section:nth-of-type(8) div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main > section:nth-of-type(8) img{
+    max-width: 400px;
+    max-height: 368px;
+}
+
+main> section:nth-of-type(8) h2:nth-of-type(1){
+    font-family: h1Font,sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color:#fe7000 ;
+    margin-bottom: 0;
+}
+
+main> section:nth-of-type(8) h2:nth-of-type(2){
+    font-family: h1Font,sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: black;
+    margin-top: -0.3em;
+}
+
+main> section:nth-of-type(8) p{
+    font-family: knopFont,sans-serif;
+    font-size: 1em;
+    color: black;
+}
+
+main> section:nth-of-type(8) a{
+    background-color: white;
+    border: 2px solid #6131ad;
+    color: #6131ad;
+    font-family: navFont,sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0.8em 4.5em;
+    margin-top: 2em;
+    min-width: 128px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
