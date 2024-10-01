@@ -58,7 +58,7 @@ header nav{
     flex-grow: 1;
 }
 
-nav :first-of-type {
+nav:first-of-type {
     margin-right: auto;
 }
 
@@ -70,7 +70,7 @@ nav a img{
 header nav ul {
     list-style: none;
     border-color: green;
-    font-family: navFont;
+    font-family: navFont,sans-serif;
     position: fixed;
     inset: 0; 
     background-color:var(--nav-bg) ;
@@ -83,6 +83,18 @@ header nav ul {
     translate:-100%;
     transition: 1s;
 
+}
+
+header nav ul li{
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: navFont,sans-serif;
+    text-transform: uppercase;
 }
 
 header > button:nth-of-type(1){
@@ -107,9 +119,20 @@ header > button:nth-of-type(2){
 header > button:nth-of-type(3){
     height: 2.5em;
     width: 2.5em;
-    background-color: transparent;
+    background-color: white;
     border: none;
+    position: relative;
+    z-index: 5;
 }
+
+nav.toonMenu ul {
+  translate:0%;
+    
+}
+
+/* nav.toonMenu button:nth-of-type(3) img{
+    content: url(images/xmenu.png);
+} */
 
 body {
     margin:0; 
@@ -212,4 +235,69 @@ footer > section:nth-of-type(5) :nth-of-type(2){
 footer > section:nth-of-type(5) :nth-of-type(3){
     width: 1.5em;
     height: 1.5em;
+}
+
+@media (width >= 47.9em){
+    
+    footer section:nth-of-type(1){
+        grid-auto-flow: column;
+        padding: 1em 0;
+        gap: 3em;
+    }
+    
+    footer section:nth-of-type(1) ul{
+        grid-auto-flow: column;
+        grid-template-columns: unset;
+        max-width: none;
+        gap: 40px;
+    }
+    
+}
+
+@media (width >= 64em){
+
+    header nav{
+        display: flex;
+        flex-grow: 1;
+    }
+
+
+    header button:nth-of-type(3){
+        display: none;
+    }
+
+    header nav ul {
+        position:static;
+        translate:none;
+        background:none;
+        padding:0;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 2em;
+        line-height: 1em;
+    }
+
+    /* header nav ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+
+    header nav ul li {
+    flex-basis:0;
+    flex-grow:0;
+    display: flex;
+    flex-direction: column;
+    }
+
+    header nav ul li a{
+        /* display:flex;
+        flex-direction:column; */
+        border:none;
+        color: black;
+        font-family: knopFont,sans-serif;
+        text-transform: none;
+    }
+
+    
 }
