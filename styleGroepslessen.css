@@ -79,7 +79,123 @@ main > section:nth-of-type(2) p{
     margin-right: 2em;
 }
 
-main > section:nth-of-type(3){
+/* begint hier */
+
+main > section:nth-of-type(2) ul{
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    padding: 1em;
+    list-style: none;
+    gap: 7em;
+}
+
+/* eerste stuk 2 */
+main > section:nth-of-type(2) ul li:nth-of-type(1){
+    position: relative;
+}
+
+main > section:nth-of-type(2) ul li:nth-of-type(1) img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+main > section:nth-of-type(2) ul li:nth-of-type(1) h4{
+    position: absolute;
+    padding: 1em 7em 7.5em 1em;
+    background-color: var(--general-background);
+    bottom: 0;
+    margin: 0;
+    top: 15em;
+    right: 0;
+    left: 2em;
+    font-family: h1Font,sans-serif;
+    color: #7adec9;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+main > section:nth-of-type(2) ul li:nth-of-type(1) p{
+    position: absolute;
+    font-family: knopFont,sans-serif;
+    margin: 0 1em 0 4em ;
+    font-size: 1em;
+    bottom: -1em;
+    top: 23em;
+    right: 1em;
+    left: 1em;
+    font-size: 1em;
+    padding: 0;
+    width: auto;
+}
+
+main > section:nth-of-type(2) ul li:nth-of-type(1) button{
+    position: absolute;
+    top: 28.5em;
+    bottom: 0;
+    right: 1em;
+    background-color: transparent;
+    border: none;
+    font-family: knopFont,sans-serif;
+    font-size: 1em;
+}
+
+/* tweede stuk 2 */
+main > section:nth-of-type(2) ul li:nth-of-type(2){
+    position: relative;
+}
+
+main > section:nth-of-type(2) ul li:nth-of-type(2) img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+main > section:nth-of-type(2) ul li:nth-of-type(2) h4{
+    position: absolute;
+    padding: 1em 0 8em 1em;
+    background-color: var(--general-background);
+    bottom: 0;
+    margin: 0;
+    top: 15em;
+    right: 0;
+    left: 2em;
+    font-family: h1Font,sans-serif;
+    color: #7adec9;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+main > section:nth-of-type(2) ul li:nth-of-type(2) p{
+    position: absolute;
+    font-family: knopFont,sans-serif;
+    margin: 0 1em 0 4em ;
+    font-size: 1em;
+    bottom: -1em;
+    top: 23em;
+    right: 1em;
+    left: 1em;
+    font-size: 1em;
+    padding: 0;
+    width: auto;
+}
+
+main > section:nth-of-type(2) ul li:nth-of-type(2) button{
+    position: absolute;
+    top: 29em;
+    bottom: 0;
+    right: 1em;
+    background-color: transparent;
+    border: none;
+    font-family: knopFont,sans-serif;
+    font-size: 1em;
+}
+
+
+
+/* eerste stuk  */
+/* main > section:nth-of-type(3){
     position: relative;
     padding: 1em;
 }
@@ -120,11 +236,11 @@ main > section:nth-of-type(3) button{
     border: none;
     font-family: knopFont,sans-serif;
     font-size: 1em;
-}
+} */
 
 /* tweede stuk */
 
-main > section:nth-of-type(4){
+/* main > section:nth-of-type(4){
     position: relative;
     padding: 7em 1em 7em 1em;
 }
@@ -166,7 +282,7 @@ main > section:nth-of-type(4) button{
     border: none;
     font-family: knopFont,sans-serif;
     font-size: 1em;
-}
+} */
 
 /* na tweede stuk */
 h3{
@@ -177,11 +293,11 @@ h3{
     font-size: 1.25em;
 }
 
-main > section:nth-of-type(5) h3{
+main > section:nth-of-type(3) h3{
     padding-top: 7em;
 }
 
-main > section:nth-of-type(5) p,main > section:nth-of-type(6) p,main > section:nth-of-type(7) p,main > section:nth-of-type(8) p,main > section:nth-of-type(9) p{
+main > section:nth-of-type(3) p,main > section:nth-of-type(4) p,main > section:nth-of-type(5) p,main > section:nth-of-type(6) p,main > section:nth-of-type(7) p{
     padding-left: 0.5em;
     font-family: knopFont,sans-serif;
     font-size: 1em;
@@ -189,11 +305,11 @@ main > section:nth-of-type(5) p,main > section:nth-of-type(6) p,main > section:n
     padding-bottom: 2em;
 }
 
-main > section:nth-of-type(10){
+main > section:nth-of-type(8){
     padding: 3.125em 1em;
 }
 
-main > section:nth-of-type(10) h2{
+main > section:nth-of-type(8) h2{
     font-family: h1Font, sans-serif;
     font-size: 2em;
     text-transform: uppercase;
@@ -204,7 +320,7 @@ main > section:nth-of-type(10) h2{
     margin-bottom: 0.5em;
 }
 
-main > section:nth-of-type(10) p{
+main > section:nth-of-type(8) p{
     font-family: knopFont,sans-serif;
     font-size: 1em;
     line-height: 1.8em;
@@ -235,7 +351,7 @@ main > section:nth-of-type(10) p{
     main > section:nth-of-type(1) img{
         object-fit: cover;
         width: 100%;
-        height: 100%;
+        min-height: 678px;
     }
     
     h1{
@@ -255,6 +371,15 @@ main > section:nth-of-type(10) p{
         padding: 0 2.5em;
     }
 
+    main > section:nth-of-type(2) ul{
+        display: flex;
+        flex-direction: row;
+        /* position: relative; */
+        padding: 1em;
+        list-style: none;
+        gap: 2em;
+    }
+
     main > section:nth-of-type(2) h2{
         padding-left: 0;
         padding-top: 1em;
@@ -272,4 +397,34 @@ main > section:nth-of-type(10) p{
     }
     
 
+}
+
+@media (width >= 80em){
+
+    main > section:nth-of-type(2){
+        padding: 3em 2.5em 0 2.5em;
+        margin: 0 70px;
+    }
+
+    h3{
+        font-family: navFont,sans-serif;
+        text-transform: uppercase;
+        /* padding-left: 0.5em; */
+        color: var(--nav-bg);
+        font-size: 1.25em;
+        padding: 0 250px;
+    }
+    
+    main > section:nth-of-type(3) p,main > section:nth-of-type(4) p,main > section:nth-of-type(5) p,main > section:nth-of-type(6) p,main > section:nth-of-type(7) p{
+        /* padding-left: 0.5em; */
+        font-family: knopFont,sans-serif;
+        font-size: 1em;
+        line-height: 1.8em;
+        /* padding-bottom: 2em; */
+        padding: 0 250px 2em 250px;
+    }
+
+    main > section:nth-of-type(8){
+        padding: 3.125em 250px;
+    }
 }

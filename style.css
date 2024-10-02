@@ -256,9 +256,14 @@ footer > section:nth-of-type(5) :nth-of-type(3){
 
 @media (width >= 64em){
 
+    header{
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .15);
+    }
+
     header nav{
         display: flex;
         flex-grow: 1;
+        padding: 1em .8em 1em .8em;
     }
 
 
@@ -272,9 +277,10 @@ footer > section:nth-of-type(5) :nth-of-type(3){
         background:none;
         padding:0;
         display: flex;
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
         padding: 0 2em;
         line-height: 1em;
+        gap: 1em;
     }
 
     /* header nav ul li{
@@ -284,7 +290,7 @@ footer > section:nth-of-type(5) :nth-of-type(3){
     } */
 
     header nav ul li {
-    flex-basis:0;
+    /* flex-basis:0; */
     flex-grow:0;
     display: flex;
     flex-direction: column;
@@ -298,6 +304,8 @@ footer > section:nth-of-type(5) :nth-of-type(3){
         font-family: knopFont,sans-serif;
         text-transform: none;
     }
+
+    
 
     
 }

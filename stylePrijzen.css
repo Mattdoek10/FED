@@ -122,6 +122,17 @@ main > section:nth-of-type(2) ul:nth-of-type(2){
     overflow-x: hidden;
     
     scroll-behavior: smooth; 
+    position: relative;
+}
+
+main > section:nth-of-type(2) ul:nth-of-type(2) li::after{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0.75em;
 }
 
 main > section:nth-of-type(2) ul:nth-of-type(2) li{
@@ -234,9 +245,9 @@ main > section:nth-of-type(2) nav ul{
 main > section:nth-of-type(2) nav ul li:nth-of-type(1){
     background-color: orange;
     border-radius: 1em;
-    font-size: 1em;
-    height: 0.5em;
-    width: 2em;
+    font-size: 0.5em;
+    height: 1em;
+    width: 4em;
 }
 
 main > section:nth-of-type(2) nav ul li:nth-of-type(2){
@@ -617,10 +628,9 @@ main> section:nth-of-type(5) ul li a p:nth-of-type(2){
     font-size: 0.9em;
     font-weight: 700px;
     line-height: 1.3;
-    /* padding: 0 24px; */
     color: black;
     position: absolute;
-    top: 35.5%;
+    top: 36%;
     right: 0;
     background-color: white;
     padding: 0.5em 1.5em;
@@ -632,7 +642,6 @@ main> section:nth-of-type(5) ul li a p:nth-of-type(3){
     font-size: 12px;
     font-weight: 700px;
     line-height: 1.3;
-    /* padding: 0 24px; */
     color: black;
     position: absolute;
     top: 43.5%;
@@ -658,9 +667,6 @@ main> section:nth-of-type(5) ul li a:nth-of-type(2){
 }
 
 main> section:nth-of-type(6){
-    /* display: flex;
-    flex-direction: column;
-     */
     padding: 0 1em 28px 1em;
 }
 
@@ -837,6 +843,7 @@ main> section:nth-of-type(8) a{
 
 @media (width >= 47.9em){
 
+
     
 }
 
@@ -848,10 +855,25 @@ main> section:nth-of-type(8) a{
 
 @media (width >= 64em){
 
+    main > section:nth-of-type(1){
+        position: relative;
+        padding: 0 5em 10em 5em;
+        background-image: linear-gradient(135deg, #ffaa30 0%, #fe7000 80.21%);
+        
+    }
+
+    main > section:nth-of-type(1) h1{
+        font-size: 2.5em;
+        padding-top: 1em;
+    }
+
+    main > section:nth-of-type(1) p{
+        display: none;
+    }
+
     main > section:nth-of-type(2){
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
         padding: 2em 5em;
         margin-top: -11em;
         z-index: 10;
@@ -867,10 +889,10 @@ main> section:nth-of-type(8) a{
         gap: 2em;
         
         overflow: visible;
-        /* display: flex;
-        overflow-x: hidden;
-        
-        scroll-behavior: smooth;  */
+    }
+
+    main > section:nth-of-type(2) ul:nth-of-type(1){
+        display: flex;
     }
 
     main > section:nth-of-type(2) ul:nth-of-type(2) li{
@@ -880,6 +902,7 @@ main> section:nth-of-type(8) a{
     main > section:nth-of-type(2) nav{
         display: none;
     }
+    
     
     main > section:nth-of-type(3){
         display: grid;
@@ -907,4 +930,153 @@ main> section:nth-of-type(8) a{
         grid-row: 1/3;
     }
 
+    main section:nth-of-type(4){
+        padding: 1.75em 5em;
+    }
+
+    main > section:nth-of-type(5){
+        padding: 0 3em;
+    }
+
+    /* code van basicfit gehaald */
+    main > section:nth-of-type(5) ul{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-auto-columns: unset;
+        grid-auto-flow: initial;
+    }
+
+    main > section:nth-of-type(6){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20% 20% 20% 20% 20% ;
+        padding: 2.75em 10em;
+        column-gap: 2em;
+    }
+    main > section:nth-of-type(6) div{
+        display:contents;
+    }
+    main > section:nth-of-type(6) img{
+        max-width: 400px;
+        max-height: 496px;
+        grid-row: 1/6;
+    }
+
+    main section:nth-of-type(6) h3:nth-of-type(1){
+        grid-row: 1/2;
+        grid-column: 2/3;
+        margin-top: 2em;
+    }
+    main section:nth-of-type(6) h3:nth-of-type(2){
+        grid-row: 2/3;
+        grid-column: 2/3;
+        margin-top: 0.2em;
+        margin-right: 1em;
+        line-height: 1em;
+    }
+
+    main section:nth-of-type(6) p:nth-of-type(1){
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+    main section:nth-of-type(6) p:nth-of-type(2){
+        grid-row: 4/5;
+        grid-column: 2/3;
+        margin: 2.5em 0;
+    }
+    main section:nth-of-type(6) p:nth-of-type(3){
+        grid-row: 5/6;
+        grid-column: 2/3;
+        margin-top: 0;
+    }
+    main section:nth-of-type(7){
+        padding: 28px 40px;
+    }
+    main section:nth-of-type(7) ul{
+        grid-auto-flow: column;
+    }
+
+    main section:nth-of-type(7) a{
+        max-width: 343px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    main section:nth-of-type(8){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20% 15% 15% 15% 35%  ;
+        padding: 2.75em 10em;
+        column-gap: 4em;
+    }
+    
+    main > section:nth-of-type(8) div{
+        display:contents;
+    }
+
+    main > section:nth-of-type(8) img{
+        grid-row: 1/6;
+        grid-column: 2/3;
+    }
+
+    main > section:nth-of-type(8) a{
+    padding: 0;
+    margin:2em 3em 3em 0;
+    height: 48px;
+    min-width: 128px;
+    max-width: 223.46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
+
+    
+}
+
+@media (width >= 80em){
+    main section:nth-of-type(1){
+        padding: 0 12em 10em 12em;
+    }
+
+    main > section:nth-of-type(2){
+        padding: 2em 12em;
+    }
+
+    main > section:nth-of-type(2) ul:nth-of-type(2){
+        gap: 8em;
+    }
+
+    main > section:nth-of-type(3){
+        padding: 2.75em 15em;
+    }
+
+    main section:nth-of-type(4){
+        padding: 1.75em 12em;
+    }
+
+    main > section:nth-of-type(5){
+        padding: 0 12em;
+    }
+
+    /* code van basicfit gehaald */
+    main > section:nth-of-type(5) ul{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-auto-columns: unset;
+        grid-auto-flow: initial;
+    }
+
+    main > section:nth-of-type(6){
+        padding: 4em 20em;
+        column-gap: 0;
+    }
+
+    main section:nth-of-type(7){
+        padding: 1.75em 12em;
+    }
+
+    main section:nth-of-type(8){
+        padding: 2.75em 18em;
+    }
 }
