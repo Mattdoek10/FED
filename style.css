@@ -1,19 +1,45 @@
 :root {
-    --general-color:red;
-    --general-background:#fff;
-    --background-color:#ece9e8;
-    --header-gradient:linear-gradient(#f8a, #fbd);
-    
-    --menu-gradient:linear-gradient(#8af, #bdf);
-    --menu-border:#46f;
-    
-    --button-color:#fff;
-    --button-background:#f46;
-    --font-nav-color: white;
 
     --nav-bg: #2d2d2d;
+
+    --pcolor:#2d2d2d;
+    --white-p-color:white;
+    --white-header-Color:white;
+    --black-header:#2d2d2d;
+    --background-color:#ece9e8;
+    --general-background:#fff;
+    --oranje-BF:#FE7000;
+    --paarse-Knop-bg:#6131ad;
+    --knop-color:white;
+    --cian-header:#7adec9;
+
+    --after-block-color: black;
+    --header-knop1:transparent;
+    --header-knop2:white;
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --nav-bg: #ece9e8;
+
+        --pcolor:#ece9e8;
+        --white-p-color:black;
+        --white-header-Color:black;
+        --black-header:#ece9e8;
+        --background-color:#2d2d2d;
+        --general-background:#000;
+        --oranje-BF:#FE7000;
+        --paarse-Knop-bg:#6131ad;
+        --knop-color:#2d2d2d;
+        --cian-header:#7adec9;
     
-  }
+        --after-block-color: black;
+        --header-knop1:#FE7000;
+        --header-knop2:#FE7000;
+    }
+
+
+}
 
   @font-face {
     font-family: navFont;
@@ -58,6 +84,10 @@ header nav{
     flex-grow: 1;
 }
 
+main p{
+    color: var(--pcolor);
+}
+
 nav:first-of-type {
     margin-right: auto;
 }
@@ -69,11 +99,11 @@ nav a img{
 
 header nav ul {
     list-style: none;
-    border-color: green;
+    /* border-color: green; */
     font-family: navFont,sans-serif;
     position: fixed;
     inset: 0; 
-    background-color:var(--nav-bg) ;
+    background-color:#2d2d2d ;
 
     margin: 0;
     padding: 4em 1em 0;
@@ -82,6 +112,7 @@ header nav ul {
 
     translate:-100%;
     transition: 1s;
+    color: var(--pcolor);
 
 }
 
@@ -91,18 +122,16 @@ header nav ul li{
 }
 
 header nav ul li a{
-    color: white;
+    color: var(--white-p-color);
     text-decoration: none;
     font-family: navFont,sans-serif;
     text-transform: uppercase;
 }
 
 header > button:nth-of-type(1){
-    /* height: 2.5em; */
-    /* width: 3em; */
-    background-color: #FE7000;
+    background-color: var(--oranje-BF);
     border: none;
-    color: white;
+    color: var(--white-header-Color);
     font-family: knopFont, sans-serif;
     text-transform: uppercase;
     padding: 0.5em 0.93em;
@@ -112,14 +141,14 @@ header > button:nth-of-type(1){
 header > button:nth-of-type(2){
     height: 2.8em;
     width: 2.8em;
-    background-color: transparent;
+    background-color: var(--header-knop1);
     border: none;
 }
 
 header > button:nth-of-type(3){
     height: 2.5em;
     width: 2.5em;
-    background-color: white;
+    background-color: var(--header-knop2);
     border: none;
     position: relative;
     z-index: 5;
@@ -136,7 +165,7 @@ nav.toonMenu ul {
 
 body {
     margin:0; 
-    background-color: white;
+    background-color: var(--general-background);
 
 }
 
@@ -151,7 +180,7 @@ footer{
 footer > section:nth-of-type(1) h4{
     font-family: navFont,sans-serif;
     font-size: 0.8em;
-    color: var(--general-background);
+    color: white;
     font-weight: 700;
     text-align: center;
 }
@@ -189,12 +218,13 @@ footer > section:nth-of-type(2) h5,footer > section:nth-of-type(3) h5,footer > s
     margin-bottom: 1.5em;
     font-weight: bold;
     position: relative;
+    color: var(--pcolor);
 }
 
 /* later aan zetten */
 footer h5::after {
     content:"";
-    background-color: #fe7000;
+    background-color: var(--oranje-BF);
     position: absolute;
     left: 1em;
     bottom: 0;
@@ -208,11 +238,12 @@ footer > section:nth-of-type(2) ul,footer > section:nth-of-type(3) ul,footer > s
     font-family: knopFont,sans-serif;
     padding: 0 1em;
     font-size: 0.875em;
-    line-height: 2em
+    line-height: 2em;
+    color: var(--pcolor);
 }
 
 footer > section:nth-of-type(5){
-    background-color: white;
+    background-color: var(--general-background);
     padding: 2em 1em 0 1em;
     
 }
@@ -300,7 +331,7 @@ footer > section:nth-of-type(5) :nth-of-type(3){
         /* display:flex;
         flex-direction:column; */
         border:none;
-        color: black;
+        color: var(--pcolor);
         font-family: knopFont,sans-serif;
         text-transform: none;
     }

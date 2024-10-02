@@ -12,9 +12,43 @@
     --button-background:#f46;
     --font-nav-color: white;
 
+
+
     --nav-bg: #2d2d2d;
+
+    --pcolor:#2d2d2d;
+    --white-p-color:white;
+    --white-header-Color:white;
+    --black-header:#2d2d2d;
+    --background-color:#ece9e8;
+    --general-background:#fff;
+    --oranje-BF:#FE7000;
+    --paarse-Knop-bg:#6131ad;
+    --knop-color:white;
+    --cian-header:#7adec9;
+
+    --after-block-color: black;
     
   }
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --nav-bg: #ece9e8;
+
+        --pcolor:#ece9e8;
+        --white-p-color:black;
+        --white-header-Color:black;
+        --black-header:#ece9e8;
+        --background-color:#2d2d2d;
+        --general-background:#000;
+        --oranje-BF:#FE7000;
+        --paarse-Knop-bg:#6131ad;
+        --knop-color:#2d2d2d;
+        --cian-header:#7adec9;
+    
+        --after-block-color: black;
+    }
+}
 
   @font-face {
     font-family: navFont;
@@ -111,7 +145,7 @@ main > section:nth-of-type(2) ul li:nth-of-type(1) h4{
     right: 0;
     left: 2em;
     font-family: h1Font,sans-serif;
-    color: #7adec9;
+    color: var(--cian-header);
     font-size: 1.3em;
     text-transform: uppercase;
 }
@@ -139,6 +173,7 @@ main > section:nth-of-type(2) ul li:nth-of-type(1) button{
     border: none;
     font-family: knopFont,sans-serif;
     font-size: 1em;
+    color: var(--pcolor);
 }
 
 /* tweede stuk 2 */
@@ -162,7 +197,7 @@ main > section:nth-of-type(2) ul li:nth-of-type(2) h4{
     right: 0;
     left: 2em;
     font-family: h1Font,sans-serif;
-    color: #7adec9;
+    color: var(--cian-header);
     font-size: 1.3em;
     text-transform: uppercase;
 }
@@ -190,6 +225,7 @@ main > section:nth-of-type(2) ul li:nth-of-type(2) button{
     border: none;
     font-family: knopFont,sans-serif;
     font-size: 1em;
+    color: var(--pcolor);
 }
 
 
@@ -289,7 +325,7 @@ h3{
     font-family: navFont,sans-serif;
     text-transform: uppercase;
     padding-left: 0.5em;
-    color: var(--nav-bg);
+    color: var(--black-header);
     font-size: 1.25em;
 }
 
@@ -314,7 +350,7 @@ main > section:nth-of-type(8) h2{
     font-size: 2em;
     text-transform: uppercase;
     background-color: var(--background-color);
-    color: var(--nav-bg);
+    color: var(--black-header);
     line-height: 1.2em;
     /* padding: 1.5em 0 0 0.5em; */
     margin-bottom: 0.5em;
@@ -387,7 +423,6 @@ main > section:nth-of-type(8) p{
         font-size: 3em;
         text-transform: uppercase;
         background-color: var(--background-color);
-        color: var(--nav-bg);
         line-height: 1.2em;
         width: 749px;
     }
@@ -410,7 +445,7 @@ main > section:nth-of-type(8) p{
         font-family: navFont,sans-serif;
         text-transform: uppercase;
         /* padding-left: 0.5em; */
-        color: var(--nav-bg);
+        color: var(--black-header);
         font-size: 1.25em;
         padding: 0 250px;
     }
