@@ -100,7 +100,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
+  | stijn          | noa                | matthew      | zhafira          |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
@@ -109,10 +109,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - stijn vroeg wat hij moest doen als zijn website geen h1 heeft. en de antwoord was dat hij zelf een moet maken en zetten in zijn eigen website.
+  - mijn vraag was om meer uitleg te krijgen over grid, en dat kreeg ik wel.
+  - ook had ik een vraag over wat :after betekend, want de officiele website had dat erin.
+  - daarnaast waren de rest van de vragen als de html etc goed is geschreven.
 
 </details>
 
@@ -133,7 +133,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
+  | stijn          | zhafira            | matthew      | Sandra           |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
@@ -142,10 +142,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - sandra had gevraagd hoe ze der logo in het midden kon doen. en de docent heeft het stukje code geschreven en gewezen hoe.
+  - a is voor navigeren, dus naar andere pagina of andere sectie
+  - button is voor acties en geen nav
+  - inspector gebruiken en niet op mobile view blijven maar steeds ermee spelen
+  - als je iets onder elkaar wil dan parent op grid zetten
+  - iets naast elkaar dan parent op flex
+  - overflow hidden en visible
+  - ook vroeg ik hoe ik een kleine lijn onder h5 kon zetten en de docent wees mij hoe het kan met :after.
 
 </details>
 
@@ -160,6 +164,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - mijn website heeft een paar errors, doordat de foto namen spatie ertussen hebben. dus heb ik dat opgelost.
+  - me meer info knop moet een a zijn en geen button.
+  - ik had geen dark mode
+  - en ik had geen custom colors, nu wel.
 
 </details>
 
@@ -180,7 +188,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
+  | stijn          | noa                | matthew      | zhafira          |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
@@ -189,10 +197,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - mijn 2 sections moesten in een ul zijn
+  - mijn website zag er goed uit en de code ook.
+  - ik vroeg hoe ik de checkmarks in het midden kon zetten, was wel gelukt maar de twede gedeelte niet.
+  - stijn had gevraagd om website te veranderen dus had alleen html laten zien.
+  - noa had ook nog gevraagd hoe zij haar nav in orde kon maken en hij hielp haar daarmee.
 
 </details>
 
@@ -210,15 +219,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Wat goed ging;
+  - mijn website van dark en lightmode laten veranderen
+  - mijn website responsive maken
+  - ik heb geleerd met grid te werken.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/goed-ging.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  wat lastig was/ niet gewerkt:
+  - mijn tabel elementen in het midden zetten, een heeft gewerkt en de andere wil niet, want als ik display flex op doet dan gaat me hele table in de waar.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/table.png" width="375px" alt="foto tabel">
+
+  - wat niet goed ging is dat me achtergrond kleur van mij text niet mee ging als me scherm klein werd.
+  <img src="readme-images/kleinscherm.png" width="375px" alt="foto kleinscherm probleem">
+
+  - en mijn footer naast elkaar zetten in 3 columns, want ik zou dan op de parent display flex moeten zeggen, maar als ik dat doe veranderd een klein stukje (eerste section) ook. dus zou ik een nav moeten zetten of een andere section om de 3 sections.
+    
 </details>
 
 
@@ -234,8 +253,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. ik heb code soms gehaald uit de basicfit website
 
 </details>
