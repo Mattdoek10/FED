@@ -57,7 +57,41 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-  -Mijn website bevat veel errors.
+  -De basicfit website bevat veel errors, als ik het validate.
+  <img src="readme-images/checklist1.jpg" width="375px" alt="foto checklist 1">
+  
+  - Basic-fit hun lang is op engels terwijl hun website in het Nederlands is.
+  <img src="readme-images/lang=en.png" width="375px" alt="screenshot over lang=en"> 
+
+  - Basic-fit heeft geen visible focus style, dus ook geen style die match met de visual layout.
+  <img src="readme-images/checklist2.jpg" width="375px" alt="checklist2"> 
+
+  - Basic-fit skipt headings waardoor je h2 bij de footer heb, en dus niet logische heading.
+  <img src="readme-images//checklist3.jpg" width="375px" alt="checklist3"> 
+
+  - ook gebruiken ze geen ul,ol en li elements voor list contents.
+  - niet alle fotos hebben een alt attribute.
+  <img src="readme-images/geen-alt.png" width="375px" alt="geen alt foto"> 
+
+  - de website heeft geen graphs, maps etc dus die heb ik niet geantwoord.
+
+  - de website heeft geen media die auto play ofzo dus die vragen heb ik open gelaten
+  - Basicfit heeft geen focus states in hun website staan.
+  - Basicfit gebruikt divs en a voor buttons ipv buttons zelf.
+  <img src="readme-images//checklist4.jpg" width="375px" alt="checklist4"> 
+
+  - hun website bevat geen dark mode, alleen light.
+  - ook is de high contrast niet supported.
+  <img src="readme-images//checklist5.jpg" width="375px" alt="checklist5"> 
+
+  - de website heeft geen background video dus daarom staat het op nee.
+  - en ook geen animatie, dus de eerste checklist vraag bij animatie zou nee moeten zijn.
+  - de contrast van de iconen matchen niet goed met de achtergrond.
+  - Basic-fit heeft geen custom ::selection kleuren, ik heb ja ingevuld in het formulier maar het zou nee moeten zijn.
+  <img src="readme-images//checklist5.jpg" width="375px" alt="checklist5"> 
+
+
+  Algemene opmeringen.
   -Het bevat veel divs.
   -Het heeft geen/geen goede alt texten.
   -Tijdens de screenreader kan ik niet goed navigeren binnen de website want er komt geen border om dat deeltje die geselecteerd is.
@@ -165,9 +199,30 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
   - mijn website heeft een paar errors, doordat de foto namen spatie ertussen hebben. dus heb ik dat opgelost.
-  - me meer info knop moet een a zijn en geen button.
-  - ik had geen dark mode
+  - ook heb ik in me website lang op nl ipv engels als Basic-fit.
+  <img src="readme-images/checklist1.jpg" width="375px" alt="checklist1"> 
+
+  - Mijn website bevat wel een focus style en t match met de visuele layout.
+  <img src="readme-images/checklist2.jpg" width="375px" alt="checklist2"> 
+
+  - Basic-fit heeft geen gebruik gemaakt van de ul, ol en li voor list elementen. Maar ik wel.
+  - mijn icons hebben een alt text, maar dat zou ik op moeten lossen door die op null te zetten.
+  - ook heeft al mijn fotos een alt en die van basicfit niet.
+  <img src="readme-images/checklist3.jpg" width="375px" alt="checklist3"> 
+
+  - Mijn website heeft ook geen media qua video etc net als BasicFit.
+  - Ik heb de a in een button gezet en die zou ik moeten weghalen.
+  - ik heb wel de focus states en basicfit niet.
+  - Mijn website heeft geen skip link, dus die zou ik moeten toevoegen.
+  <img src="readme-images/checklist4.jpg" width="375px" alt="checklist4"> 
+
+  - in mijn list heb ik no staan bij dark mode supported, maar nu heb ik het wel staan
+  - Ook heb ik niet gecheckt voor de high contrast mode, maar het zou waarschijnlijk nee zijn, dus zou ik dat moeten oplossen.
+  - ik heb geen animaties dus die heb ik open laten staan.
+  - de contrast voor normale text is goed.
+  - De contrast voor de iconen is niet goed genoeg, dus zou die moeten oplossen met een box shadow erachter te doen.
   - en ik had geen custom colors, nu wel.
+  <img src="readme-images/checklist5.jpg" width="375px" alt="checklist1"> 
 
 </details>
 
